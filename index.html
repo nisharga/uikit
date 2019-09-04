@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ui Kit exersice</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+    </head>
+    <body>
+<!-- img/img1.jpeg -->
+<div class="uk-container">
+<nav class="uk-navbar-container" uk-navbar uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #bottom" id="nk">
+
+    <div class="uk-navbar-left">
+         <a class="uk-navbar-item uk-logo" href="#">Logo</a>
+    </div>
+
+    <div class="uk-navbar-right">
+
+        <ul class="uk-navbar-nav">
+            <li class="uk-active"><a href="#">Home</a></li>
+            <li>
+                <a href="#">Other</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li><a href="#offer" uk-scroll="">Offer</a></li>
+                        <li><a href="#kenburs" uk-scroll="">Kenburns</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#projrct" uk-scroll="">Projets</a></li>
+            <li><a href="#mymodal" uk-scroll="">Register</a></li>
+            
+        </ul>
+    </div>
+</nav>      <!-- header -->
+
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
+
+    <ul class="uk-slider-items uk-grid uk-grid-match" uk-height-viewport="offset-top: true; offset-bottom: 30">
+        <li class="uk-width-3-4">
+            <div class="uk-cover-container">
+                <img src="img/img1.jpeg" alt="" uk-cover>
+                <div class="uk-position-center uk-panel"><h1>Laptop</h1></div>
+            </div>
+        </li>
+        <li class="uk-width-3-4">
+            <div class="uk-cover-container">
+                <img src="img/img2.jpeg" alt="" uk-cover>
+                <div class="uk-position-center uk-panel"><h1>ALL BUDDY</h1></div>
+            </div>
+        </li>
+        <li class="uk-width-3-4">
+            <div class="uk-cover-container">
+                <img src="img/img3.jpeg" alt="" uk-cover>
+                <div class="uk-position-center uk-panel"><h1>Kids</h1></div>
+            </div>
+        </li>
+        <li class="uk-width-3-4">
+            <div class="uk-cover-container">
+                <img src="img/img4.jpeg" alt="" uk-cover>
+                <div class="uk-position-center uk-panel"><h1>tea</h1></div>
+            </div>
+        </li>
+        <li class="uk-width-3-4">
+            <div class="uk-cover-container">
+                <img src="img/img2.jpeg" alt="" uk-cover>
+                <div class="uk-position-center uk-panel"><h1>frineds</h1></div>
+            </div>
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+</div>  <!-- slider -->
+
+<div class="uk-margin uk-child-width-1-2@s uk-grid-match" uk-grid>
+    <div>
+        <div class="uk-card uk-card-hover uk-card-body">
+            <h3 class="uk-card-title">Hover</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+            <h3 class="uk-card-title">Default</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+            <h3 class="uk-card-title">Primary</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-secondary uk-card-hover uk-card-body uk-light">
+            <h3 class="uk-card-title">Secondary</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+    </div>
+</div>   <!-- card -->
+
+
+<div class="uk-panel uk-margin-top">
+    <img class="uk-align-left uk-margin-remove-adjacent" src="img/img2.jpeg" width="225" height="150" alt="Example image">
+    <h1>Panel Zone</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, velit possimus doloremque fuga aspernatur, ut eveniet in sint, suscipit a minus quis quaerat. Eveniet, facilis provident consequatur repellat sint ea.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div> <!-- tv-align -->
+
+<h2 class="uk-heading-small uk-text-center" id="offer">Offer Available</h2>
+<div  class="uk-margin uk-flex-center uk-grid-small uk-child-width-auto" uk-grid uk-countdown="date: 2020-09-01T15:21:53+00:00">
+    
+    <div>
+        <div class="uk-countdown-number uk-countdown-days"></div>
+        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Days</div>
+    </div>
+    <div class="uk-countdown-separator">:</div>
+    <div>
+        <div class="uk-countdown-number uk-countdown-hours"></div>
+        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Hours</div>
+    </div>
+    <div class="uk-countdown-separator">:</div>
+    <div>
+        <div class="uk-countdown-number uk-countdown-minutes"></div>
+        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Minutes</div>
+    </div>
+    <div class="uk-countdown-separator">:</div>
+    <div>
+        <div class="uk-countdown-number uk-countdown-seconds"></div>
+        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Seconds</div>
+    </div>
+</div>  <!-- countdown -->
+
+<h2 id="kenburs">Uk animation kenburns</h2>
+<div class="uk-margin-top uk-margin-bottom uk-cover-container">
+    <canvas width="400" height="200"></canvas>
+
+        <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
+                <img src="img/img1.jpeg" alt="" uk-cover>
+        </div>
+</div> <!-- kenburns -->
+
+<h1 class="uk-text-center" id="projrct">Complete Project's</h1>
+<div uk-filter="target: .js-filter" >
+
+    <ul class="uk-subnav uk-subnav-pill uk-text-center">
+        <li class="uk-active" uk-filter-control><a href="#">All Projrct's</a></li>
+        <li uk-filter-control="[data-color='white']"><a href="#">Web</a></li>
+        <li uk-filter-control="[data-color='blue']"><a href="#">Graphis</a></li>
+        <li uk-filter-control="[data-color='black']"><a href="#">App</a></li>
+    </ul>
+
+    <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid>
+        <li data-color="white">
+            <div class="uk-card uk-card-default uk-card-body">WEB DESIGN</div>
+        </li>
+        <li data-color="blue">
+            <div class="uk-card uk-card-primary uk-card-body">Graphis</div>
+        </li>
+        <li data-color="white">
+            <div class="uk-card uk-card-default uk-card-body">WEB DESIGN</div>
+        </li>
+        <li data-color="white">
+            <div class="uk-card uk-card-default uk-card-body">WEB DESIGN</div>
+        </li>
+        <li data-color="black">
+            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
+        </li>
+        <li data-color="black">
+            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
+        </li>
+        <li data-color="blue">
+            <div class="uk-card uk-card-primary uk-card-body">Graphis</div>
+        </li>
+        <li data-color="black">
+            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
+        </li>
+        <li data-color="blue">
+            <div class="uk-card uk-card-primary uk-card-body">Graphis</div>
+        </li>
+        <li data-color="white">
+            <div class="uk-card uk-card-default uk-card-body">WEB DESIGN</div>
+        </li>
+        <li data-color="blue">
+            <div class="uk-card uk-card-primary uk-card-body">Graphis</div>
+        </li>
+        <li data-color="blue">
+            <div class="uk-card uk-card-primary uk-card-body">Graphis</div>
+        </li>
+        <li data-color="black">
+            <div class="uk-card uk-card-secondary uk-card-body">Item</div>
+        </li>
+    </ul>
+
+</div> <!-- filter section -->
+
+
+<!-- This is a button toggling the modal with the default close button -->
+<button class="uk-button uk-button-default uk-margin-small-right uk-margin-top uk-margin-bottom uk-button-danger" type="button" uk-toggle="target: #modal-close-default" style="display: block; width: 100%; padding: 20px;" id="mymodal">Registration Form</button>
+
+<!-- This is the modal with the default close button -->
+<div id="modal-close-default" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body ">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h2 class="uk-modal-title">Registration Form</h2>
+
+        <form>
+    <fieldset class="uk-fieldset">
+
+        <legend class="uk-legend">Input your details plese</legend>
+
+        <div class="uk-margin">
+            <input class="uk-input" type="text" placeholder="Name">
+        </div>
+
+        <div class="uk-margin">
+            <select class="uk-select">
+                <option>Day</option>
+                <option>Night</option>
+            </select>
+        </div>
+
+        <div class="uk-margin">
+            <textarea class="uk-textarea" rows="5" placeholder="Sumarry"></textarea>
+        </div>
+
+        <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+            <label><input class="uk-radio" type="radio" name="radio2" checked>Male</label>
+            <label><input class="uk-radio" type="radio" name="radio2">Female</label>
+        </div>
+
+        <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+            <label><input class="uk-checkbox" type="checkbox" checked>Senior</label>
+            <label><input class="uk-checkbox" type="checkbox">Junior</label>
+        </div>
+
+        <label for="salery">Salery</label>
+        <div class="uk-margin" id="salery">
+            <input class="uk-range" type="range" value="2" min="0" max="10" step="0.1">
+        </div>
+        <button class="uk-button-small uk-button-primary">Send</button>
+    </fieldset>
+    </form>
+    </div>
+</div> <!-- modal and form -->
+
+
+
+<h3 class="uk-text-center">Light Box</h3>
+<div class="uk-grid-match uk-child-width-expand@s uk-text-center" uk-grid>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body" uk-lightbox>
+                <a href="img/img2.jpeg" data-alt="Image" >
+                    <img src="img/img2.jpeg" alt="">
+                </a>
+        </div>
+     </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body" uk-lightbox>
+            <a href="img/img3.jpeg">
+                <img src="img/img3.jpeg" alt="">
+            </a>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body" uk-lightbox>
+           <a href="img/img4.jpeg">
+               <img src="img/img4.jpeg" alt="">
+           </a>
+        </div>
+    </div>
+</div> <!-- lightbox -->
+
+
+
+
+
+
+
+
+
+<a href="" class="uk-button uk-button-secondary uk-align-right" uk-scroll="" href="nk"><span uk-icon="arrow-up"></span></a> <!-- scroll-top -->
+
+
+</div>
+
+    <div class="uk-container uk-section-primary uk-padding uk-text-center">
+            <h3>Thanks for visit</h3>
+            <p>&copy; all promo by Nisharga 2020</p>
+    </div>
+
+
+
+</body>
+</html>
